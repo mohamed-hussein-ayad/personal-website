@@ -173,7 +173,7 @@ img {
   .nav-menu {
     position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: -100%;
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
@@ -196,4 +196,21 @@ img {
 }
 .nav-link:hover {
   color: var(--first-color);
+}
+.nav-icon {
+  font-size: 1.2rem;
+}
+.nav-close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--first-color);
+}
+.nav-close:hover {
+  color: var(--first-color-alt);
+}
+.show-menu {
+  bottom: 0;
 }
