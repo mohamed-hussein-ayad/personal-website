@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--==================== UNICONS ====================-->
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css" />
+    <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Mohamed Ayad</title>
   </head>
   <body>
+    <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav-logo">Mohamed</a>
@@ -56,7 +61,9 @@
         </div>
       </nav>
     </header>
+    <!--==================== MAIN ====================-->
     <main class="main">
+      <!--==================== HOME ====================-->
       <section class="home section" id="home">
         <div class="home-container container grid">
           <div class="home-content grid">
@@ -87,27 +94,29 @@
                 <mask id="mask0" mask-type="alpha">
                   <path
                     d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                          130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                          97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                          0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
                 </mask>
                 <g mask="url(#mask0)">
                   <path
                     d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                          165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                          129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                          -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
                   />
                   <image
                     class="home-blob-img"
+                    x="12"
+                    y="18"
                     href="/assets/images/perfil.png"
                   />
                 </g>
               </svg>
             </div>
             <div class="home-data">
-              <h1 class="home-title">Hi, I'm Mohamed Ayad</h1>
+              <h1 class="home-title">Hi, I'm Mohamed</h1>
               <h3 class="home-subtitle">Frontend Developer</h3>
               <p class="home-description">
                 High level experience in web design and development knowledge,
@@ -127,7 +136,458 @@
           </div>
         </div>
       </section>
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About Me</h2>
+        <span class="section-subtitle">My Introduction</span>
+        <div class="about-container container grid">
+          <img src="/assets/images/about.jpg" alt="about" class="about-img" />
+          <div class="about-data">
+            <p class="about-desctiption">
+              Web developer, with extensive knowledge and years of experience,
+              working in web technologies and UX / UI design, delivering quality
+              work.
+            </p>
+            <div class="about-info">
+              <div>
+                <span class="about-info-title">02+</span>
+                <span class="about-info-name"
+                  >Years <br />
+                  experience</span
+                >
+              </div>
+              <div>
+                <span class="about-info-title">07+</span>
+                <span class="about-info-name"
+                  >Completed <br />
+                  projects</span
+                >
+              </div>
+              <div>
+                <span class="about-info-title">00+</span>
+                <span class="about-info-name"
+                  >Companies <br />
+                  worked</span
+                >
+              </div>
+            </div>
+            <div class="about-buttons">
+              <a download="" href="#" class="button button-flex"
+                >Download CV<i class="uil uil-download-alt button-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <span class="section-subtitle">My technical level</span>
+        <div class="skills-container container grid">
+          <!--==================== SKILL 1 ====================-->
+          <div class="skills-content skills-open">
+            <div class="skills-header">
+              <i class="uil uil-brackets-curly skills-icon"></i>
+              <div>
+                <h1 class="skills-title">Frontend developer</h1>
+                <span class="skills-subtitle">More then 1 year</span>
+              </div>
+              <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">HTML</h3>
+                  <span class="sills-number">90%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-html"></span>
+                </div>
+              </div>
+
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">CSS</h3>
+                  <span class="sills-number">80%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-css"></span>
+                </div>
+              </div>
+
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">JavaScript</h3>
+                  <span class="sills-number">60%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-javascript"></span>
+                </div>
+              </div>
+
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">Angular</h3>
+                  <span class="sills-number">80%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-angular"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--==================== SKILL 2 ====================-->
+          <div class="skills-content skills-close">
+            <div class="skills-header">
+              <i class="uil uil-palette skills-icon"></i>
+              <div>
+                <h1 class="skills-title">Grapic designer & UI designer</h1>
+                <span class="skills-subtitle">More then 1 year</span>
+              </div>
+              <i class="uil uil-angle-down skills-arrow"></i>
+            </div>
+            <div class="skills-list grid">
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">Figma</h3>
+                  <span class="sills-number">80%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-figma"></span>
+                </div>
+              </div>
+
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">Photoshop</h3>
+                  <span class="sills-number">70%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-photoshop"></span>
+                </div>
+              </div>
+
+              <div class="skills-data">
+                <div class="skills-titles">
+                  <h3 class="skills-name">Illustrator</h3>
+                  <span class="sills-number">80%</span>
+                </div>
+                <div class="skills-bar">
+                  <span class="skills-percentage skills-illustrator"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section-title">Qualification</h2>
+        <span class="section-subtitle">My personal journey</span>
+        <div class="qualification-container container">
+          <div class="qualification-tabs">
+            <div
+              class="qualification-button button-flex qualification-active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification-icon"></i>
+              Education
+            </div>
+
+            <div class="qualification-button button-flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification-icon"></i>
+              Work
+            </div>
+          </div>
+          <div class="qualification-sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification-content qualification-active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Law</h3>
+                  <span class="qualification-subtitle"
+                    >Alexandria - University</span
+                  >
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020 - 2024
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification-data">
+                <div></div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification-title">Grapic Designe</h3>
+                  <span class="qualification-subtitle">Self learning</span>
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2022
+                  </div>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">UI / UX</h3>
+                  <span class="qualification-subtitle">Self learning</span>
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022 - 2023
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 4 ====================-->
+              <div class="qualification-data">
+                <div></div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <!-- <span class="qualification-line"></span> -->
+                </div>
+                <div>
+                  <h3 class="qualification-title">Web Development</h3>
+                  <span class="qualification-subtitle">Self learning</span>
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023 - 2024
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification-content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification-data">
+                <div>
+                  <h3 class="qualification-title">Grapic Designer</h3>
+                  <span class="qualification-subtitle">Freelancer</span>
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021 - 2024
+                  </div>
+                </div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+              </div>
+
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification-data">
+                <div></div>
+                <div>
+                  <span class="qualification-rounder"></span>
+                  <span class="qualification-line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification-title">Frontend Developer</h3>
+                  <span class="qualification-subtitle">Freelancer</span>
+                  <div class="qualification-calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2023 - 2024
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section-title">Services</h2>
+        <span class="section-subtitle">What I offer</span>
+        <div class="services-container container grid">
+          <!--==================== SERVICES 1 ====================-->
+          <div class="services-content">
+            <div>
+              <i class="uil uil-web-grid services-icon"></i>
+              <h3 class="services-title">
+                UX/UI <br />
+                Designer
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+              >Veiw More<i class="uil uil-arrow-right button-icon"></i
+            ></span>
+            <div class="services-modal">
+              <div class="services-modal-content">
+                <h4 class="services-modal-title">
+                  UX/UI <br />
+                  Designer
+                </h4>
+                <i class="uil uil-times services-modal-close"></i>
+                <ul class="services-modal-services grid">
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>Web page development.</p>
+                  </li>
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>I create UX element interaction.</p>
+                  </li>
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>I postion your company brand.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--==================== SERVICES 2 ====================-->
+          <div class="services-content">
+            <div>
+              <i class="uil uil-arrow services-icon"></i>
+              <h3 class="services-title">
+                Frontend <br />
+                Developer
+              </h3>
+            </div>
+            <span
+              class="button button-flex button-small button-link services-button"
+              >Veiw More<i class="uil uil-arrow-right button-icon"></i
+            ></span>
+            <div class="services-modal">
+              <div class="services-modal-content">
+                <h4 class="services-modal-title">
+                  Frontend <br />
+                  Developer
+                </h4>
+                <i class="uil uil-times services-modal-close"></i>
+                <ul class="services-modal-services grid">
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>I develop the user interface.</p>
+                  </li>
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>Web page development.</p>
+                  </li>
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>I create UX element interaction.</p>
+                  </li>
+                  <li class="services-modal-service">
+                    <i class="uil uil-check-circle services-modal-icon"></i>
+                    <p>I postion your company brand.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <span class="section-subtitle">Most recent work</span>
+        <div class="portfolio-container container swiper">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+            <div class="portfolio-content grid">
+              <img
+                src="/assets/images/portfolio1.jpg"
+                alt=""
+                class="portfolio-img"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Modern website</h3>
+                <p class="portfolio-description">
+                  Website adaptable to all devices, with ui components and
+                  animated interaction.
+                </p>
+                <a
+                  href="#"
+                  class="button button-flex button-small portfolio-button"
+                  >Demo<i class="uil uil-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+            <div class="portfolio-content grid">
+              <img
+                src="/assets/images/portfolio2.jpg"
+                alt=""
+                class="portfolio-img"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Brand Designe</h3>
+                <p class="portfolio-description">
+                  Website adaptable to all devices, with ui components and
+                  animated interaction.
+                </p>
+                <a
+                  href="#"
+                  class="button button-flex button-small portfolio-button"
+                  >Demo<i class="uil uil-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+            <div class="portfolio-content grid">
+              <img
+                src="/assets/images/portfolio3.jpg"
+                alt=""
+                class="portfolio-img"
+              />
+              <div class="portfolio-data">
+                <h3 class="portfolio-title">Online Store</h3>
+                <p class="portfolio-description">
+                  Website adaptable to all devices, with ui components and
+                  animated interaction.
+                </p>
+                <a
+                  href="#"
+                  class="button button-flex button-small portfolio-button"
+                  >Demo<i class="uil uil-arrow-right button-icon"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--==================== PROJECT IN MIND ====================-->
+      <section class="project section"></section>
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section"></section>
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact"></section>
     </main>
+    <!--==================== FOOTER ====================-->
+    <footer class="footer"></footer>
+
+    <!--==================== SCROLL TOP ====================-->
+
+    <!--==================== SWIPER JS ====================-->
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <!--==================== MAIN JS ====================-->
     <script src="/assets/js/script.js"></script>
   </body>
 </html>
