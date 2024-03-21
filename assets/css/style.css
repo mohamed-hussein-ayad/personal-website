@@ -332,6 +332,15 @@ img {
   transition: 0.3s;
 }
 
+.button-white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button-white:hover {
+  background-color: #fff;
+}
+
 .button-flex {
   display: inline-flex;
   align-items: center;
@@ -689,10 +698,106 @@ img {
 .portfolio-button:hover .button-icon {
   transform: translateX(0.25rem);
 }
-/*==================== PROJECT IN MIND ====================*/
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.swiper-button-prev {
+  left: -0.5rem;
+}
+
+.swiper-button-next {
+  right: -0.5rem;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: -2.5rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-pagination-bullet {
+  outline: none;
+}
+/*==================== PROJECT IN MIND ====================*/
+.project {
+  text-align: center;
+}
+
+.project-bg {
+  background-color: var(--first-color-second);
+  padding-top: 3rem;
+}
+
+.project-title {
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project-description {
+  margin-bottom: var(--mb-1-5);
+}
+
+.project-title,
+.project-description {
+  color: #fff;
+}
+
+.project-img {
+  width: 232px;
+  justify-self: center;
+}
 /*==================== TESTIMONIAL ====================*/
 
+.testimonial-data,
+.testimonial-header {
+  display: flex;
+}
+
+.testimonial-data {
+  justify-content: space-between;
+  margin-bottom: var(--mb-1);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: var(--mb-0-75);
+}
+
+.testimonial-name {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.testimonial-client {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.testimonial-description {
+  margin-bottom: var(--mb-2-5);
+}
+
+.testimonial-icon-star {
+  color: var(--first-color);
+}
+
+.swiper .swiper-pagination-testimonial {
+  bottom: 0;
+}
 /*==================== CONTACT ME ====================*/
 
 /*==================== FOOTER ====================*/

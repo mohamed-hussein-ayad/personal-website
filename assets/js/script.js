@@ -91,9 +91,40 @@ modaleCloses.forEach((modaleClose) => {
   });
 });
 /*==================== PORTFOLIO SWIPER  ====================*/
+let swiperPortfolio = new Swiper(".portfolio-container", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    Clickable: true,
+  },
+  // mousewheel: true,
+  // keyboard: true,
+});
 
 /*==================== TESTIMONIAL ====================*/
 
+let swiperTestimonial = new Swiper(".testimonial-container", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 48,
+  pagination: {
+    el: ".swiper-pagination",
+    Clickable: true,
+    dynamicBullets: true,
+  },
+  breakPoints: {
+    568: {
+      slidesPerView: 2,
+    },
+  },
+  // mousewheel: true,
+  // keyboard: true,
+});
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/
