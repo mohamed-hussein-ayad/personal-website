@@ -4,21 +4,19 @@
 :root {
   --header-height: 3rem;
   /*========== Colors ==========*/
-  /* Change favorite color */
-  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
   /* HSL color mode */
-  --first-color: hsl(var(--hue-color), 69%, 61%);
-  --first-color-second: hsl(var(--hue-color), 69%, 61%);
-  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-  --title-color: hsl(var(--hue-color), 8%, 15%);
-  --text-color: hsl(var(--hue-color), 8%, 45%);
-  --text-color-light: hsl(var(--hue-color), 8%, 65%);
-  --input-color: hsl(var(--hue-color), 70%, 96%);
-  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --first-color: hsl(131, 49%, 13%);
+  --first-color-second: hsl(105, 41%, 22%);
+  --first-color-alt: hsl(105, 41%, 25%);
+  --first-color-lighter: hsl(105, 40%, 28%);
+  --title-color: hsl(131, 49%, 13%);
+  --text-color: hsl(131, 49%, 13%);
+  --text-color-light: hsl(105, 41%, 22%);
+  --input-color: hsl(0, 0%, 86%);
+  --body-color: hsl(0, 0%, 100%);
   --container-color: #fff;
-  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+  --scroll-bar-color: hsl(105, 41%, 22%);
+  --scroll-thumb-color: hsl(105, 41%, 22%);
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
@@ -60,8 +58,34 @@
   }
 }
 /*========== Variables Dark theme ==========*/
-
+body.dark-theme {
+  /* HSL color mode */
+  --first-color-second: hsl(105, 41%, 22%);
+  --title-color: hsl(131, 49%, 13%);
+  --text-color: hsl(131, 49%, 13%);
+  --text-color-light: hsl(105, 41%, 22%);
+  --input-color: hsl(105, 41%, 22%);
+  --body-color: hsl(105, 41%, 22%);
+  --container-color: hsl(105, 41%, 22%);
+  --scroll-bar-color: hsl(105, 41%, 22%);
+  --scroll-thumb-color: hsl(105, 41%, 22%);
+}
 /*========== Button Dark/Light ==========*/
+.nav-btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--first-color);
+}
 
 /*==================== BASE ====================*/
 * {
@@ -154,14 +178,13 @@ img {
   align-items: center;
 }
 
-.nav-logo,
+.nav-logo {
+  width: 3rem;
+}
+
 .nav-toggle {
   color: var(--title-color);
   font-weight: var(--font-medium);
-}
-
-.nav-logo:hover {
-  color: var(--first-color);
 }
 
 .nav-toggle {
@@ -226,6 +249,14 @@ img {
 
 .show-menu {
   bottom: 0;
+}
+
+.active-link {
+  color: var(--first-color);
+}
+
+.scroll-header {
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /*==================== HOME ====================*/
@@ -736,8 +767,9 @@ img {
 }
 
 .project-bg {
-  background-color: var(--first-color-second);
+  background-color: var(--first-color);
   padding-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .project-title {
@@ -755,7 +787,7 @@ img {
 }
 
 .project-img {
-  width: 232px;
+  width: 180px;
   justify-self: center;
 }
 /*==================== TESTIMONIAL ====================*/
@@ -904,14 +936,296 @@ img {
 }
 
 /*========== SCROLL UP ==========*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: 0.8;
+  padding: 0 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scrollup-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
 
 /* Show scroll */
+.show-scroll {
+  bottom: 5rem;
+}
 
 /*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+  .nav-menu {
+    padding: 2rem 0.25rem 4rem;
+  }
+  .nav-list {
+    column-gap: 0;
+  }
+  .home-content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+  .home-blob {
+    width: 180px;
+  }
+  .skills-title {
+    font-size: var(--normal-font-size);
+  }
+  .qualification-data {
+    gap: 0.5rem;
+  }
+  .services-container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+  .services-content {
+    padding-left: 3.5rem;
+  }
+  .services-modal {
+    padding: 0 0.5rem;
+  }
+  .project-img {
+    width: 200px;
+  }
+  .testimonial-data,
+  .testimonial-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-img {
+    margin-right: 0;
+    margin-bottom: var(--mb-0-25);
+  }
+  .testimonial-data,
+  .testimonial-description {
+    text-align: center;
+  }
+}
 
 /* For medium devices */
-
+@media screen and (min-width: 568px) {
+  .home-content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .home-data {
+    grid-column: initial;
+  }
+  .home-img {
+    order: 1;
+    justify-self: center;
+  }
+  .about-container,
+  .skills-container,
+  .portfolio-content,
+  .project-container,
+  .contact-container,
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .qualification-section {
+    display: grid;
+    grid-template-columns: 0.6fr;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body {
+    margin: 0;
+  }
+  .section {
+    padding: 6rem 0 2rem;
+  }
+  .section-subtitle {
+    margin-bottom: 4rem;
+  }
+  .header {
+    top: 0;
+    bottom: initial;
+  }
+  .header,
+  .main,
+  .footer-container {
+    padding: 0 1rem;
+  }
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 1rem;
+  }
+  .nav-icon,
+  .nav-close,
+  .nav-toggle {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    column-gap: 2rem;
+  }
+  .nav-menu {
+    margin-left: auto;
+  }
+  .change-theme {
+    margin: 0;
+  }
+  .home-container {
+    row-gap: 5rem;
+  }
+  .home-content {
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+  }
+  .home-blob {
+    width: 270px;
+  }
+  .home-scroll {
+    display: block;
+  }
+  .home-scroll-button {
+    margin-left: 3rem;
+  }
+  .about-container {
+    column-gap: 5rem;
+  }
+  .about-img {
+    width: 350px;
+  }
+  .about-desctiption {
+    text-align: initial;
+  }
+  .about-info {
+    justify-content: space-between;
+  }
+  .about-buttons {
+    justify-content: initial;
+  }
+  .qualification-tabs {
+    justify-content: center;
+  }
+  .qualification-button {
+    margin: 0 var(--mb-1);
+  }
+  .qualification-sections {
+    grid-template-columns: 0.5fr;
+  }
+  .services-container {
+    grid-template-columns: repeat(2, 280px);
+    justify-content: center;
+  }
+  .services-icon {
+    font-size: 2rem;
+  }
+  .services-content {
+    padding: 6rem 0 2rem 2.5rem;
+  }
+  .services-modal-content {
+    width: 450px;
+  }
+  .portfolio-img {
+    width: 320px;
+  }
+  .portfolio-content {
+    align-items: center;
+  }
+  .project {
+    text-align: initial;
+  }
+  .project-bg {
+    background: none;
+  }
+  .project-container {
+    background-color: var(--first-color-second);
+    border-radius: 1rem;
+    padding: 3rem 2.5rem 3rem;
+    grid-template-columns: 1fr max-content;
+    column-gap: 3rem;
+  }
+  .project-data {
+    padding-top: 0.8rem;
+  }
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-bg {
+    padding: 3rem 0 3.5rem;
+  }
+  .footer-links {
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  .footer-social {
+    justify-content: flex-end;
+  }
+  .footer-copy {
+    margin-top: 4.5rem;
+  }
+}
 /* For large devices */
+
+@media screen and (min-width: 1024px) {
+  .header,
+  .main,
+  .footer-container {
+    padding: 0;
+  }
+  .home-blob {
+    width: 320px;
+  }
+  .home-social {
+    transform: translateX(-6rem);
+  }
+  .services-container {
+    grid-template-columns: repeat(2, 320px); /* 238px */
+  }
+  .portfolio-content {
+    column-gap: 5rem;
+  }
+  .swiper-portfolio-icon {
+    font-size: 3.5rem;
+  }
+  .swiper-button-prev {
+    left: -3.5rem;
+  }
+  .swiper-button-next {
+    right: -3.5rem;
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: -4.5rem;
+  }
+  .contact-form {
+    width: 460px;
+  }
+  .contact-input {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

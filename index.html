@@ -18,11 +18,13 @@
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav-logo">Mohamed</a>
+        <a href="#home" class="nav-logo"
+          ><img src="/assets/images/logo.png" alt="logo"
+        /></a>
         <div class="nav-menu" id="nav-menu">
           <ul class="nav-list grid">
             <li class="nav-item">
-              <a href="#home" class="nav-link"
+              <a href="#home" class="nav-link active-link"
                 ><i class="uil uil-estate nav-icon"></i>Home</a
               >
             </li>
@@ -48,13 +50,14 @@
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link"
-                ><i class="uil uil-message nav-icon"></i> contactme</a
+                ><i class="uil uil-message nav-icon"></i> Contact me</a
               >
             </li>
           </ul>
           <i class="uil uil-times nav-close" id="nav-close"></i>
         </div>
         <div class="nav-btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
           <div class="nav-toggle" id="nav-toggle">
             <i class="uil uil-apps"></i>
           </div>
@@ -110,7 +113,7 @@
                     class="home-blob-img"
                     x="12"
                     y="18"
-                    href="/assets/images/perfil.svg"
+                    href="/assets/images/perfil.png"
                   />
                 </g>
               </svg>
@@ -128,7 +131,7 @@
             </div>
           </div>
           <div class="home-scroll">
-            <a href="" class="home-scroll-button button-flex"
+            <a href="#about" class="home-scroll-button button-flex"
               ><i class="uil uil-mouse-alt home-scroll-mouse"></i
               ><span class="home-scroll-name">Scroll down</span
               ><i class="uil uil-arrow-down home-scroll-arrow"></i
@@ -141,7 +144,7 @@
         <h2 class="section-title">About Me</h2>
         <span class="section-subtitle">My Introduction</span>
         <div class="about-container container grid">
-          <img src="/assets/images/about.png" alt="about" class="about-img" />
+          <img src="/assets/images/about.svg" alt="about" class="about-img" />
           <div class="about-data">
             <p class="about-desctiption">
               Web developer, with extensive knowledge and years of experience,
@@ -597,7 +600,7 @@
               ></a>
             </div>
             <img
-              src="/assets/images/project.png"
+              src="/assets/images/logo.png"
               alt="project"
               class="project-img"
             />
@@ -799,13 +802,15 @@
           </div>
         </div>
         <p class="footer-copy">
-          &#169; <strong>Mohamed Ayad</strong> right reserved
+          &#169; <strong>Mohamed Ayad</strong> All right reserved
         </p>
       </div>
     </footer>
 
-    <!--==================== SCROLL TOP ====================-->
-
+    <!--==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up"
+      ><i class="uil uil-arrow-up scrollup-icon"></i
+    ></a>
     <!--==================== SWIPER JS ====================-->
     <script src="/assets/js/swiper-bundle.min.js"></script>
     <!--==================== MAIN JS ====================-->
