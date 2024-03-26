@@ -181,7 +181,7 @@ img {
 }
 
 .nav-logo {
-  width: 3rem;
+  width: 2rem;
 }
 
 .nav-toggle {
@@ -771,7 +771,8 @@ img {
 .project-bg {
   background-color: var(--first-color);
   padding-top: 3rem;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .project-title {
@@ -789,7 +790,7 @@ img {
 }
 
 .project-img {
-  width: 180px;
+  width: 150px;
   justify-self: center;
 }
 /*==================== TESTIMONIAL ====================*/
@@ -878,6 +879,11 @@ img {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
 }
 /*==================== FOOTER ====================*/
 
@@ -1085,6 +1091,9 @@ img {
     height: calc(var(--header-height) + 1.5rem);
     column-gap: 1rem;
   }
+  .nav-logo {
+    width: 3rem;
+  }
   .nav-icon,
   .nav-close,
   .nav-toggle {
@@ -1200,6 +1209,9 @@ img {
   .footer-container {
     padding: 0;
   }
+  .nav-logo {
+    width: 3rem;
+  }
   .home-blob {
     width: 320px;
   }
@@ -1207,7 +1219,7 @@ img {
     transform: translateX(-6rem);
   }
   .services-container {
-    grid-template-columns: repeat(2, 320px); /* 238px */
+    grid-template-columns: repeat(2, 320px);
   }
   .portfolio-content {
     column-gap: 5rem;
