@@ -1,3 +1,63 @@
+/*==================== the number of Squeres ====================*/
+
+const numDivs = 26;
+
+const box = document.getElementById("box");
+
+for (let i = 0; i < numDivs; i++) {
+  const div = document.createElement("div");
+  box.appendChild(div);
+}
+
+/*==================== typing text ====================*/
+
+const textToType = "Hi, I'm Mohamed";
+const typingSpeed = 100;
+const loopDelay = 1000;
+
+const typedTextElement = document.getElementById("home-title");
+
+function typeText() {
+  let typedText = "";
+  let index = 0;
+
+  const typingInterval = setInterval(() => {
+    typedText += textToType[index];
+    typedTextElement.textContent = typedText;
+    index++;
+    if (index === textToType.length) {
+      clearInterval(typingInterval);
+      setTimeout(() => {
+        typedTextElement.textContent = "";
+        typeText();
+      }, loopDelay);
+    }
+  }, typingSpeed);
+}
+
+typeText();
+/*==================== counter ====================*/
+// const counters = document.querySelectorAll(".num");
+
+// // Function to animate each counter to a specific value
+// function animateCounter(counter, targetValue) {
+//   let count = 0;
+//   const increment = targetValue / 200; // Adjust the speed of animation
+
+//   const interval = setInterval(() => {
+//     counter.textContent = Math.round(count); // Round up the current value
+//     count += increment;
+//     if (count >= targetValue) {
+//       clearInterval(interval);
+//     }
+//   }, 10); // Adjust the interval for smoothness
+// }
+
+// // Call the function to start the counter animation for each counter
+// animateCounter(document.getElementById("num1"), 2); // Change the target value as needed
+// animateCounter(document.getElementById("num2"), 10); // Change the target value as needed
+// animateCounter(document.getElementById("num3"), 2); // Change the target value as needed
+
 /*==================== MENU SHOW Y HIDDEN ====================*/
 
 const navMenu = document.getElementById("nav-menu"),
@@ -44,6 +104,7 @@ function toggleSkills() {
 skillsHeader.forEach((el) => {
   el.addEventListener("click", toggleSkills);
 });
+
 /*==================== QUALIFICATION TABS ====================*/
 
 const tabs = document.querySelectorAll("[data-target]"),
@@ -102,10 +163,12 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
     el: ".swiper-pagination",
     Clickable: true,
   },
+  autoplay: {
+    delay: 2000,
+  },
   // mousewheel: true,
   // keyboard: true,
 });
-
 /*==================== TESTIMONIAL ====================*/
 
 let swiperTestimonial = new Swiper(".testimonial-container", {
@@ -121,6 +184,9 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
     568: {
       slidesPerView: 2,
     },
+  },
+  autoplay: {
+    delay: 2000,
   },
   // mousewheel: true,
   // keyboard: true,
@@ -195,3 +261,25 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+/*==================== loading page ====================*/
+
+const loaderContainer = document.querySelector(".loader-container");
+const pageContent = document.querySelector("#page-content");
+window.addEventListener("load", () => {
+  loaderContainer.classList.add("hidden");
+  pageContent.classList.add("visible");
+});
+
+/*==================== animate sections ====================*/
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.isIntersecting) {
+//       entry.target.classList.add("show");
+//     }
+//   });
+// });
+
+// const hiddenEle = document.querySelectorAll(".hidden");
+
+// hiddenEle.forEach((el) => observer.observe(el));

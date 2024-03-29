@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--==================== favicon.ico ====================-->
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
     <!--==================== UNICONS ====================-->
     <link
       rel="stylesheet"
@@ -15,6 +17,11 @@
     <title>Mohamed Ayad</title>
   </head>
   <body>
+    <div class="loader-container">
+      <div class="loader">
+        <img src="/assets/images/logo.png" alt="" />
+      </div>
+    </div>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
@@ -64,7 +71,10 @@
         </div>
       </nav>
     </header>
+    <!--==================== Squares ====================-->
+    <div class="box" id="box"></div>
     <!--==================== MAIN ====================-->
+
     <main class="main">
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
@@ -122,7 +132,7 @@
               </svg>
             </div>
             <div class="home-data">
-              <h1 class="home-title">Hi, I'm Mohamed Ayad</h1>
+              <h1 class="home-title" id="home-title">Hi, I'm Mohamed Ayad</h1>
               <h3 class="home-subtitle">Web Developer</h3>
               <p class="home-description">
                 High level experience in web design and development knowledge,
@@ -142,8 +152,9 @@
           </div>
         </div>
       </section>
+
       <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
+      <section class="about section hidden" id="about">
         <h2 class="section-title">About Me</h2>
         <span class="section-subtitle">My Introduction</span>
         <div class="about-container container grid">
@@ -156,21 +167,21 @@
             </p>
             <div class="about-info">
               <div>
-                <span class="about-info-title">02+</span>
+                <span class="about-info-title num" id="num1">00</span>
                 <span class="about-info-name"
                   >Years <br />
                   experience</span
                 >
               </div>
               <div>
-                <span class="about-info-title">07+</span>
+                <span class="about-info-title num" id="num2">00+</span>
                 <span class="about-info-name"
                   >Completed <br />
                   projects</span
                 >
               </div>
               <div>
-                <span class="about-info-title">00+</span>
+                <span class="about-info-title num" id="num3">00+</span>
                 <span class="about-info-name"
                   >Companies <br />
                   worked</span
@@ -186,7 +197,7 @@
         </div>
       </section>
       <!--==================== SKILLS ====================-->
-      <section class="skills section" id="skills">
+      <section class="skills section hidden" id="skills">
         <h2 class="section-title">Skills</h2>
         <span class="section-subtitle">My technical level</span>
         <div class="skills-container container grid">
@@ -206,43 +217,36 @@
                   <h3 class="skills-name">HTML</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">CSS</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">JavaScript</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">TypeScript</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">Angular</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">SASS</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">Bootstrap</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">Git & Github</h3>
@@ -266,13 +270,11 @@
                   <h3 class="skills-name">Figma</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">Photoshop</h3>
                 </div>
               </div>
-              <hr />
               <div class="skills-data">
                 <div class="skills-titles">
                   <h3 class="skills-name">Illustrator</h3>
@@ -283,7 +285,7 @@
         </div>
       </section>
       <!--==================== QUALIFICATION ====================-->
-      <section class="qualification section">
+      <section class="qualification section hidden">
         <h2 class="section-title">Qualification</h2>
         <span class="section-subtitle">My personal journey</span>
         <div class="qualification-container container">
@@ -416,7 +418,7 @@
         </div>
       </section>
       <!--==================== SERVICES ====================-->
-      <section class="services section" id="services">
+      <section class="services section hidden" id="services">
         <h2 class="section-title">Services</h2>
         <span class="section-subtitle">What I offer</span>
         <div class="services-container container grid">
@@ -462,7 +464,7 @@
             </div>
           </div>
           <!--==================== SERVICES 2 ====================-->
-          <div class="services-content">
+          <div class="services-content last">
             <div>
               <i class="uil uil-arrow services-icon"></i>
               <h3 class="services-title">
@@ -505,7 +507,7 @@
         </div>
       </section>
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
+      <section class="portfolio section hidden" id="portfolio">
         <h2 class="section-title">Portfolio</h2>
         <span class="section-subtitle">Most recent work</span>
         <div class="portfolio-container container swiper">
@@ -644,7 +646,7 @@
         </div>
       </section>
       <!--==================== PROJECT IN MIND ====================-->
-      <section class="project section">
+      <section class="project section hidden">
         <div class="project-bg">
           <div class="project-container container grid">
             <div class="project-data">
@@ -666,7 +668,7 @@
         </div>
       </section>
       <!--==================== TESTIMONIAL ====================-->
-      <section class="testimonial section">
+      <section class="testimonial section hidden">
         <h2 class="section-title">Testimonial</h2>
         <span class="section-subtitle">My client saying</span>
         <div class="testimonial-container container swiper">
@@ -758,7 +760,7 @@
         </div>
       </section>
       <!--==================== CONTACT ME ====================-->
-      <section class="contact section" id="contact">
+      <section class="contact section hidden" id="contact">
         <h2 class="section-title">Contact Me</h2>
         <span class="section-subtitle">Get in touch</span>
         <div class="contact-container container grid">
@@ -847,6 +849,7 @@
         </div>
       </section>
     </main>
+
     <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer-bg">
@@ -897,6 +900,7 @@
     <a href="#" class="scrollup" id="scroll-up"
       ><i class="uil uil-arrow-up scrollup-icon"></i
     ></a>
+
     <!--==================== SWIPER JS ====================-->
     <script src="/assets/js/swiper-bundle.min.js"></script>
     <!--==================== MAIN JS ====================-->
