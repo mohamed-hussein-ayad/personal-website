@@ -342,16 +342,6 @@ img {
 
 .nav-logo {
   width: 2rem;
-  animation: logo 2s linear infinite alternate;
-}
-
-@keyframes logo {
-  0% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(5px);
-  }
 }
 
 .nav-toggle {
@@ -525,7 +515,7 @@ img {
 .home-title {
   font-size: var(--h1-font-size);
   position: absolute;
-  top: 53%;
+  top: 50%;
 }
 
 .home-subtitle {
