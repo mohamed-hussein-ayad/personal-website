@@ -1,6 +1,6 @@
 /*==================== the number of Squeres ====================*/
 
-const numDivs = 26;
+const numDivs = 25;
 
 const box = document.getElementById("box");
 
@@ -272,14 +272,14 @@ window.addEventListener("load", () => {
 });
 
 /*==================== animate sections ====================*/
-// const observer = new IntersectionObserver((entries) => {
-//   entries.forEach((entry) => {
-//     if (entry.isIntersecting) {
-//       entry.target.classList.add("show");
-//     }
-//   });
-// });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
 
-// const hiddenEle = document.querySelectorAll(".hidden");
+const hiddenEle = document.querySelectorAll(".hidden");
 
-// hiddenEle.forEach((el) => observer.observe(el));
+hiddenEle.forEach((el) => observer.observe(el));

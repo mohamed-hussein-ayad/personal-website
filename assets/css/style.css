@@ -171,7 +171,7 @@ img {
   background-color: var(--body-color);
 }
 
-/* .hidden {
+.hidden {
   opacity: 0;
   transform: translateY(20%);
   transition: all 1s ease;
@@ -180,7 +180,7 @@ img {
 .show {
   opacity: 1;
   transform: translateX(0);
-} */
+}
 
 .box div {
   position: absolute;
@@ -318,11 +318,6 @@ img {
 .box div:nth-child(25) {
   top: 850%;
   left: 10%;
-  animation: animate 8s linear infinite;
-}
-.box div:nth-child(26) {
-  top: 900%;
-  left: 30%;
   animation: animate 8s linear infinite;
 }
 @keyframes animate {
