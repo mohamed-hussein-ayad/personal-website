@@ -182,7 +182,9 @@ img {
   transform: translateX(0);
 }
 
-.box div {
+/* ============== buble background =================== */
+
+/* .box div {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -329,7 +331,7 @@ img {
     transform: translateY(-90px) scale(1.3) rotate(360deg);
     opacity: 0;
   }
-}
+} */
 /*==================== Nav ====================*/
 
 .nav {
