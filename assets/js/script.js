@@ -285,3 +285,25 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenEle = document.querySelectorAll(".hidden");
 
 hiddenEle.forEach((el) => observer.observe(el));
+
+/*==================== animate sections change the backgroun color ====================*/
+
+window.addEventListener("scroll", () => {
+  const back = document.querySelector(".back");
+  if (window.scrollY > 200) {
+    // Adjust the scroll threshold as needed
+    back.classList.add("change");
+  } else {
+    back.classList.remove("change");
+  }
+});
+
+/*==================== animate progress-bar ====================*/
+
+window.addEventListener("scroll", () => {
+  const progressBar = document.querySelector(".progress-bar");
+  const totalHeight =
+    document.documentElement.scrollHeight - window.innerHeight;
+  const progress = (window.scrollY / totalHeight) * 100;
+  progressBar.style.width = `${progress}%`;
+});
