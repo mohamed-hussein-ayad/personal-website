@@ -1123,7 +1123,7 @@ button {
 }
 
 .footer-title {
-  font-size: var(--h1-font-size);
+  font-size: 24px;
   margin-bottom: var(--mb-0-25);
 }
 
