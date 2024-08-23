@@ -166,7 +166,7 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
     Clickable: true,
   },
   autoplay: {
-    delay: 2000,
+    delay: 5000,
   },
   // mousewheel: true,
   // keyboard: true,
