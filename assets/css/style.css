@@ -506,8 +506,13 @@ img {
   }
 }
 
-.home-blob-img {
+.home-blob-img.zoom {
   width: 170px;
+  transition: transform 0.5s ease;
+}
+
+.home-blob-img.zoom:hover {
+  transform: scale(1.1);
 }
 
 .home-data {
@@ -568,12 +573,12 @@ img {
   padding: 1rem;
   border-radius: 0.5rem;
   font-weight: var(--font-medium);
-  transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 .button:hover {
   background-color: var(--first-color-alt);
-  transform: scale(1.1);
+  animation: bounce 0.5s;
 }
 
 .button-icon {
@@ -649,6 +654,13 @@ img {
 .about-buttons {
   display: flex;
   justify-content: center;
+  transition: transform 0.2s;
+}
+
+.about-button:hover {
+  display: flex;
+  justify-content: center;
+  animation: bounce 0.5s;
 }
 
 /*==================== SKILLS ====================*/
@@ -1014,6 +1026,7 @@ img {
   width: 190px;
   justify-self: center;
 }
+
 /*==================== TESTIMONIAL ====================*/
 
 .testimonial-data,
@@ -1651,4 +1664,31 @@ button {
       opacity: 0;
     }
   }
+}
+
+/* --------------------  Button Animation   ------------------------ */
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+/* --------------------  Zoom img Animation   ------------------------ */
+
+img.zoom {
+  transition: transform 0.5s ease;
+}
+
+img.zoom:hover {
+  transform: scale(1.1);
 }
